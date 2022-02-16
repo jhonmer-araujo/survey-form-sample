@@ -1,0 +1,140 @@
+html,
+body {
+  min-height: 100%;
+  background-color: royalblue;
+}
+body,
+div,
+form,
+input,
+select,
+textarea,
+p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+}
+h1 {
+  position: absolute;
+  margin: 28% 0 0 23%;
+  font-size: 36px;
+  color: #fff;
+  z-index: 2;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px 0 20px 0;
+}
+#description {
+  position: absolute;
+  margin: 30% 0 0 18%;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  z-index: 3;
+}
+form {
+  width: 50%;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 50px 0 #333;
+}
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  padding-bottom: 2rem;
+}
+label {
+  display: block;
+  margin: 10px 0 10px 0;
+}
+.label-text {
+  display: block;
+  margin: 20px 0 10px 0;
+}
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+input::placeholder {
+    color: #999;
+}
+select {
+  width: 100%;
+  padding: 7px 0;
+  background: transparent;
+}
+textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+}
+button {
+  width: 100%;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: block;
+        padding: 0;
+    }
+    form {
+        width: 100%;
+    }
+    h1 {
+        margin: none;
+        font-size: 20px;
+    }
+    #description {
+        margin: 40% 0;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    h1 {
+        margin: 20%;
+        font-size: 25px;
+    }
+    #description {
+        margin: 23% 0 0 -35px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    h1 {
+        margin: 20% 5% 0 5%;
+        font-size: 30px;
+    }
+    #description {
+        margin: 22% 5% 0 5%;
+        font-size: 26px;
+    }
+}

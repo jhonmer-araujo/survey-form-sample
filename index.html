@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Sample</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="survey-form">
+            <h1 id="title">OLD CARS RENTAL</h1>
+            <p id="description">Fill the survey and win 1 hour of rental car</p>
+            <img class="image" src="images/old-cars.jpeg" alt="car" id="car">
+            <label for="name" id="name-label">Full name</label>
+            <input type="text" id="name" placeholder="Introduce your name...">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Indrocude your email...">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Introduce your age..." min="13" max="99">
+            <label for="dropdown">Gender</label>
+            <select name="" id="dropdown">
+                <option value="">Choose your gender</option>
+                <option value="">Female</option>
+                <option value="">Male</option>
+                <option value="">Other</option>
+            </select>
+            <label for="birthdate">
+                Birthdate
+            </label>
+            <input type="date" name="birthdate" id="birthdate">
+            <p class="label-text">Choose Car Model</p>
+            <label for="html">
+                <input type="radio" id="html" name="model" value="Rolls-Royce Dawn Drophead">Rolls-Royce Dawn Drophead</input>
+            </label>
+            <label for="css">
+                <input type="radio" id="css" name="model" value="Austin-Healey 3000">Austin-Healey 3000</input>
+            </label>
+            <label for="javascript">
+                <input type="radio" id="javascript" name="model" value="1957 Corvette">1957 Corvette</input>
+            </label>
+            <p class="label-text">Choose Car accesories</p>
+            <label for="vehicle1">
+                <input type="checkbox" id="vehicle1" name="accesories" value="Audio Player & Blutooth">Audio Player & Blutooth</input>
+            </label>
+            <label for="vehicle2">
+                <input type="checkbox" id="vehicle2" name="accesories" value="Roofless">Roofless</input>
+            </label>
+            <label for="vehicle3">
+                <input type="checkbox" id="vehicle3" name="accesories" value="Bench seat">Bench seat</input>
+            </label>
+            <label for="comments">Aditional comments</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <button id="submit" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
